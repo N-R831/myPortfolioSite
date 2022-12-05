@@ -1,0 +1,75 @@
+/********************
+entire
+********************/
+body {
+  color: #333;
+  font-family: "Meiryo UI", "Noto Serif";
+  font-size: 0.875rem;
+  min-height: 100vh;
+  position: relative;
+}
+
+a {
+  color: #333;
+  text-decoration: none;
+  transition: all 0.5s;
+}
+
+.wrapper {
+  width: 100%;
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 0 40px;
+}
+
+/********************
+header
+********************/
+#header {
+  width: 100%;
+  height: 120px;
+  background-color: #FCFEEE;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: fixed;
+  z-index: 10;
+}
+#header a h1 {
+  font-family: "Noto Serif";
+  font-size: 1.3rem;
+  font-weight: bold;
+  letter-spacing: 1px;
+}
+#header #navi {
+  margin-bottom: 40px;
+}
+#header #navi ul {
+  display: flex;
+  justify-content: space-between;
+}
+#header #navi ul li {
+  margin-right: 32px;
+  padding-top: 64px;
+  padding-left: 8px;
+  padding-right: 8px;
+  border-bottom: solid 6px #5B9511;
+  border-right: solid 6px #5B9511;
+  border-left: solid 6px #5B9511;
+  border-radius: 0% 0% 6px 6px;
+  cursor: pointer;
+}
+
+/********************
+main
+********************/
+main.wrapper {
+  margin-top: 120px;
+}
+main.wrapper .main-visual {
+  display: flex;
+  justify-content: space-between;
+}
+main.wrapper .main-visual img {
+  width: 70%;
+}/*# sourceMappingURL=style.css.map */
