@@ -79,20 +79,28 @@ main.wrapper {
         grid-template-columns: 30% 70%;
         margin-top: 120px;
         .main-profile {
+            display: grid;
+            grid-template-rows: 50% 50%;
             border: #333 solid 1px;
-            display: block;
-        }
-        .profile-titel {
-            display: block;
-            border: #333 solid 1px;
-        }
-        .profile-content {
-            display: block;
-            border: #333 solid 1px;
-        }
-        .main-image {
-            img {
-                width: 100%;
+            .profile-row1 {
+                .profile-name {
+                    display: block;
+                    border: #333 solid 1px;
+                    font-size: 32px;
+                }
+                .profile-titel {
+                    display: block;
+                    border: #333 solid 1px;
+                }
+            }
+            .profile-content {
+                display: block;
+                border: #333 solid 1px;
+            }
+            .main-image {
+                img {
+                    width: 100%;
+                }
             }
         }
     }

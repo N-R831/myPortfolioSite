@@ -72,17 +72,23 @@ main.wrapper .main-visual {
   margin-top: 120px;
 }
 main.wrapper .main-visual .main-profile {
-  border: #333 solid 1px;
-  display: block;
-}
-main.wrapper .main-visual .profile-titel {
-  display: block;
+  display: grid;
+  grid-template-rows: 50% 50%;
   border: #333 solid 1px;
 }
-main.wrapper .main-visual .profile-content {
+main.wrapper .main-visual .main-profile .profile-row1 .profile-name {
+  display: block;
+  border: #333 solid 1px;
+  font-size: 32px;
+}
+main.wrapper .main-visual .main-profile .profile-row1 .profile-titel {
   display: block;
   border: #333 solid 1px;
 }
-main.wrapper .main-visual .main-image img {
+main.wrapper .main-visual .main-profile .profile-content {
+  display: block;
+  border: #333 solid 1px;
+}
+main.wrapper .main-visual .main-profile .main-image img {
   width: 100%;
 }/*# sourceMappingURL=style.css.map */
