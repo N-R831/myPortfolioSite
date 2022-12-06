@@ -75,11 +75,25 @@ main
 main.wrapper {
     //margin-top: 120px;
     .main-visual {
-        display: flex;
-        justify-content: space-between;
+        display: grid;
+        grid-template-columns: 30% 70%;
         margin-top: 120px;
-        img {
-            width: 70%;
+        .main-profile {
+            border: #333 solid 1px;
+            display: block;
+        }
+        .profile-titel {
+            display: block;
+            border: #333 solid 1px;
+        }
+        .profile-content {
+            display: block;
+            border: #333 solid 1px;
+        }
+        .main-image {
+            img {
+                width: 100%;
+            }
         }
     }
 }

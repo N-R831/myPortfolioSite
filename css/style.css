@@ -67,10 +67,22 @@ header
 main
 ********************/
 main.wrapper .main-visual {
-  display: flex;
-  justify-content: space-between;
+  display: grid;
+  grid-template-columns: 30% 70%;
   margin-top: 120px;
 }
-main.wrapper .main-visual img {
-  width: 70%;
+main.wrapper .main-visual .main-profile {
+  border: #333 solid 1px;
+  display: block;
+}
+main.wrapper .main-visual .profile-titel {
+  display: block;
+  border: #333 solid 1px;
+}
+main.wrapper .main-visual .profile-content {
+  display: block;
+  border: #333 solid 1px;
+}
+main.wrapper .main-visual .main-image img {
+  width: 100%;
 }/*# sourceMappingURL=style.css.map */
