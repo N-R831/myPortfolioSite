@@ -4,7 +4,7 @@ entire
 
 body {
     color: #333;
-    font-family: 'Meiryo UI';
+    font-family: 'Meiryo';
     font-size: 0.875rem;
     min-height: 100vh;
     position: relative;
@@ -19,8 +19,19 @@ a {
 .wrapper {
     width: 100%;
     max-width: 1280px;
-    margin: 0 40px;
+    //margin: 0 40px;
     padding: 0 0;
+}
+
+.parts-title {
+    font-size: 64px;
+    font-family: 'Noto Serif';
+    text-align: center;
+}
+
+.parts-subtitle {
+    font-size: 24px;
+    text-align: center;
 }
 
 /********************
@@ -30,6 +41,7 @@ header
 #header {
     width: 100%;
     height: 120px;
+    padding: 0 40px;
     background-color: #FCFEEE;
     display: flex;
     justify-content: space-between;
@@ -42,10 +54,15 @@ header
 
     a {
         h1 {
+            padding-left: 32px;
             font-family: 'Noto Serif';
             font-size: 1.3rem;
             font-weight: bold;
             letter-spacing: 1px;
+        }
+
+        h3 {
+            padding-left: 32px;
         }
     }
 
@@ -79,10 +96,12 @@ main.wrapper {
         grid-template-columns: 30% 70%;
         grid-template-rows: 70% 30%;
         margin-top: 120px;
+        margin-bottom: 128px;
         height: 854px;
         //border: #333 solid 1px;
         height: 854px;
         .profile-col1-row1 {
+            padding: 0 40px;
             grid-row: 1 / 2;
             grid-column: 1 / 2;
             position: relative;
@@ -109,7 +128,7 @@ main.wrapper {
             position: relative;
             .profile-content {
                 position: absolute;
-                left: 16px;
+                left: 56px;
                 bottom: 96px;
                 font-size: 24px;
                 display: block;
@@ -129,11 +148,60 @@ main.wrapper {
     }
 
     .about {
-        .title-header {
-            display: block;
-            justify-content: center;
-            .about-title {
-                font-size: 64px;
+        .about-main {
+            width: 100%;
+            height: 524px;
+            display: grid;
+            grid-template-columns: 53% 47%;
+            margin-top: 8px;
+            margin-left: 40px;
+            margin-bottom: 128px;
+            .about-chr {
+                grid-column: 1 / 2;
+                background-color: #FCFEEE;
+                display: flex;
+                justify-content: center;
+                flex-direction: column;
+                align-items: center;
+                text-align: center;
+                letter-spacing: 0.15em;
+                line-height: 140%;
+                position: relative;
+                .view-more {
+                    position: absolute;
+                    bottom: 64px;
+                }
+            }
+
+            .about-img {
+                grid-column: 2 / 3;
+                position: relative;
+                img {
+                    width: 472px;
+                    height: 400px;
+                    object-fit: cover;
+                    position: absolute;
+                    top: 56px;
+                    left: -32px;
+                }
+            }
+        }
+
+        .about-skills {
+            .skills-title {
+                display: flex;
+                justify-content: left;
+                .parts-title {
+                    font-size: 44px;
+                    font-family: 'Noto Serif';
+                    text-align: center;
+                    align-items: bottom;
+                }
+                .parts-subtitle {
+                    font-size: 32px;
+                    align-items: bottom;
+                    
+                }
             }
         }
     }
