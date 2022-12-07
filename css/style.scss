@@ -127,4 +127,14 @@ main.wrapper {
             }
         }
     }
+
+    .about {
+        .title-header {
+            display: block;
+            justify-content: center;
+            .about-title {
+                font-size: 64px;
+            }
+        }
+    }
 }

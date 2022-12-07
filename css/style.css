@@ -112,4 +112,11 @@ main.wrapper .main-visual .main-image img {
   width: 100%;
   position: absolute;
   right: 0px;
+}
+main.wrapper .about .title-header {
+  display: block;
+  justify-content: center;
+}
+main.wrapper .about .title-header .about-title {
+  font-size: 64px;
 }/*# sourceMappingURL=style.css.map */
