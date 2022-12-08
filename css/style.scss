@@ -188,29 +188,33 @@ main.wrapper {
         }
 
         .about-skills {
+            
             .skills-title {
+                margin-left: 96px;
                 &::before {
                     content: "";
                     display: block;
-                    width: 30px;
-                    height: 30px;
+                    width: 28px;
+                    height: 60px;
                     background-color: #FCFEEE;
                     
                 }
                 display: flex;
                 justify-content: left;
                 .parts-title {
+                    margin-left: 8px;
                     font-size: 44px;
                     font-family: 'Noto Serif';
                     text-align: center;
-                    align-items: bottom;
+                    align-items: center;
                 }
                 .parts-subtitle {
+                    margin-left: 16px;
                     &::before {
                         content: "- ";
                     }
                     font-size: 32px;
-                    align-items: bottom;
+                    align-items: center;
                     &::after {
                         content: " -";
                     }

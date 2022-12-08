@@ -169,25 +169,28 @@ main.wrapper .about .about-main .about-img img {
   left: -32px;
 }
 main.wrapper .about .about-skills .skills-title {
+  margin-left: 96px;
   display: flex;
   justify-content: left;
 }
 main.wrapper .about .about-skills .skills-title::before {
   content: "";
   display: block;
-  width: 30px;
-  height: 30px;
+  width: 28px;
+  height: 60px;
   background-color: #FCFEEE;
 }
 main.wrapper .about .about-skills .skills-title .parts-title {
+  margin-left: 8px;
   font-size: 44px;
   font-family: "Noto Serif";
   text-align: center;
-  align-items: bottom;
+  align-items: center;
 }
 main.wrapper .about .about-skills .skills-title .parts-subtitle {
+  margin-left: 16px;
   font-size: 32px;
-  align-items: bottom;
+  align-items: center;
 }
 main.wrapper .about .about-skills .skills-title .parts-subtitle::before {
   content: "- ";
