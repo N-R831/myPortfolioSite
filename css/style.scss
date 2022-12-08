@@ -220,6 +220,17 @@ main.wrapper {
                     }
                 }
             }
+
+            .skills-parts {
+                display: flex;
+                justify-content: space-between;
+                .parts-image {
+                    width: 30%;
+                    img{
+                        width: inherit;
+                    }
+                }
+            }
         }
     }
 }

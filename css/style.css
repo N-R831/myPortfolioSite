@@ -197,4 +197,14 @@ main.wrapper .about .about-skills .skills-title .parts-subtitle::before {
 }
 main.wrapper .about .about-skills .skills-title .parts-subtitle::after {
   content: " -";
+}
+main.wrapper .about .about-skills .skills-parts {
+  display: flex;
+  justify-content: space-between;
+}
+main.wrapper .about .about-skills .skills-parts .parts-image {
+  width: 30%;
+}
+main.wrapper .about .about-skills .skills-parts .parts-image img {
+  width: inherit;
 }/*# sourceMappingURL=style.css.map */
