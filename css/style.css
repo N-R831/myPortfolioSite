@@ -172,6 +172,13 @@ main.wrapper .about .about-skills .skills-title {
   display: flex;
   justify-content: left;
 }
+main.wrapper .about .about-skills .skills-title::before {
+  content: "";
+  display: block;
+  width: 30px;
+  height: 30px;
+  background-color: #FCFEEE;
+}
 main.wrapper .about .about-skills .skills-title .parts-title {
   font-size: 44px;
   font-family: "Noto Serif";
@@ -181,4 +188,10 @@ main.wrapper .about .about-skills .skills-title .parts-title {
 main.wrapper .about .about-skills .skills-title .parts-subtitle {
   font-size: 32px;
   align-items: bottom;
+}
+main.wrapper .about .about-skills .skills-title .parts-subtitle::before {
+  content: "- ";
+}
+main.wrapper .about .about-skills .skills-title .parts-subtitle::after {
+  content: " -";
 }/*# sourceMappingURL=style.css.map */

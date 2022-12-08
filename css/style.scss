@@ -189,6 +189,14 @@ main.wrapper {
 
         .about-skills {
             .skills-title {
+                &::before {
+                    content: "";
+                    display: block;
+                    width: 30px;
+                    height: 30px;
+                    background-color: #FCFEEE;
+                    
+                }
                 display: flex;
                 justify-content: left;
                 .parts-title {
@@ -198,9 +206,14 @@ main.wrapper {
                     align-items: bottom;
                 }
                 .parts-subtitle {
+                    &::before {
+                        content: "- ";
+                    }
                     font-size: 32px;
                     align-items: bottom;
-                    
+                    &::after {
+                        content: " -";
+                    }
                 }
             }
         }
