@@ -198,13 +198,13 @@ main.wrapper .about .about-skills .skills-title .parts-subtitle::before {
 main.wrapper .about .about-skills .skills-title .parts-subtitle::after {
   content: " -";
 }
-main.wrapper .about .about-skills .skills-parts {
+main.wrapper .about .about-skills .block-skills {
   display: flex;
   justify-content: space-between;
 }
-main.wrapper .about .about-skills .skills-parts .parts-image {
+main.wrapper .about .about-skills .block-skills .skills-parts .parts-image {
   width: 30%;
 }
-main.wrapper .about .about-skills .skills-parts .parts-image img {
+main.wrapper .about .about-skills .block-skills .skills-parts .parts-image img {
   width: inherit;
 }/*# sourceMappingURL=style.css.map */

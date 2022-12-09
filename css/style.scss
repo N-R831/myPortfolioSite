@@ -221,13 +221,15 @@ main.wrapper {
                 }
             }
 
-            .skills-parts {
+            .block-skills {
                 display: flex;
                 justify-content: space-between;
-                .parts-image {
-                    width: 30%;
-                    img{
-                        width: inherit;
+                .skills-parts{
+                    .parts-image {
+                        width: 30%;
+                        img{
+                            width: inherit;
+                        }
                     }
                 }
             }
