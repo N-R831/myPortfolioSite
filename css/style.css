@@ -201,10 +201,34 @@ main.wrapper .about .about-skills .skills-title .parts-subtitle::after {
 main.wrapper .about .about-skills .block-skills {
   display: flex;
   justify-content: space-between;
+  margin-bottom: 128px;
+}
+main.wrapper .about .about-skills .block-skills .skills-parts {
+  padding: 0 16px;
 }
 main.wrapper .about .about-skills .block-skills .skills-parts .parts-image {
-  width: 30%;
+  width: 100%;
 }
 main.wrapper .about .about-skills .block-skills .skills-parts .parts-image img {
-  width: inherit;
+  max-height: 300px;
+}
+main.wrapper .about .about-skills .block-skills .skills-parts .parts-chr h3 {
+  font-size: 24px;
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 24px;
+}
+main.wrapper .works {
+  margin-bottom: 128px;
+}
+main.wrapper .works .works-view {
+  display: flex;
+  justify-content: space-between;
+}
+main.wrapper .works .works-view .works-img {
+  width: 30%;
+  padding: 0 16px;
+}
+main.wrapper .works .works-view .works-img img {
+  width: 100%;
 }/*# sourceMappingURL=style.css.map */

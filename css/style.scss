@@ -224,13 +224,38 @@ main.wrapper {
             .block-skills {
                 display: flex;
                 justify-content: space-between;
+                margin-bottom: 128px;
                 .skills-parts{
+                    padding: 0 16px;
                     .parts-image {
-                        width: 30%;
+                        width: 100%;
                         img{
-                            width: inherit;
+                            max-height: 300px;
                         }
                     }
+                    .parts-chr {
+                        h3 {
+                            font-size: 24px;
+                            font-weight: bold;
+                            text-align: center;
+                            margin-bottom: 24px;
+                        }
+                    }
+                }
+            }
+
+        }
+    }
+    .works {
+        margin-bottom: 128px;
+        .works-view {
+            display: flex;
+            justify-content: space-between;
+            .works-img {
+                width: 30%;
+                padding: 0 16px;
+                img {
+                    width: 100%;
                 }
             }
         }
