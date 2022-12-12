@@ -34,6 +34,39 @@ a {
     text-align: center;
 }
 
+.view-more {
+    span::before {
+        width: 3px;
+        height: 100%;
+        position: absolute;
+        content: "";
+        left: -10%;
+        bottom: 0;
+        background-color: #5B9511;
+    }
+    span::after {
+        width: 125%;
+        height: 3px;
+        position: absolute;
+        content: "";
+        left: -8px;
+        bottom: 0;
+        background-color: #5B9511;
+    }
+
+    a::after {
+        width: 3px;
+        height: 100%;
+        position: absolute;
+        content: "";
+        right: -20%;
+        bottom: 0;
+        background-color: #5B9511;
+        transform: translateX(-290%) rotate(320deg);
+    }
+
+}
+
 /********************
 header
 ********************/
@@ -72,15 +105,24 @@ header
             display: flex;
             justify-content: space-between;
             li {
-                margin-right: 32px;
-                padding-top: 64px;
-                padding-left: 8px;
-                padding-right: 8px;
-                border-bottom: solid 6px #5B9511;
-                border-right: solid 6px #5B9511;
-                border-left: solid 6px #5B9511;
-                border-radius: 0% 0% 6px 6px;
-                cursor: pointer;
+                a {
+                    margin-right: 32px;
+                    padding-top: 64px;
+                    padding-left: 8px;
+                    padding-right: 8px;
+                    border-bottom: solid 6px #5B9511;
+                    border-right: solid 6px #5B9511;
+                    border-left: solid 6px #5B9511;
+                    border-radius: 0% 0% 9px 9px;
+                    cursor: pointer;
+                }
+            }
+            li:hover {
+                a {
+                    padding-top: 88px;
+                    color: #FFF;
+                    background-color: #5B9511;
+                }
             }
         }
     }
@@ -96,7 +138,6 @@ main.wrapper {
         grid-template-columns: 30% 70%;
         grid-template-rows: 70% 30%;
         margin-top: 120px;
-        margin-bottom: 128px;
         height: 854px;
         //border: #333 solid 1px;
         height: 854px;
@@ -147,7 +188,8 @@ main.wrapper {
         }
     }
 
-    .about {
+    #about {
+        padding-top: 128px;
         .about-main {
             width: 100%;
             height: 524px;
@@ -188,7 +230,6 @@ main.wrapper {
         }
 
         .about-skills {
-            
             .skills-title {
                 margin-left: 96px;
                 &::before {
@@ -222,21 +263,25 @@ main.wrapper {
             }
 
             .block-skills {
-                display: flex;
+                display: grid;
                 justify-content: space-between;
-                margin-bottom: 128px;
+                grid-template-columns: 33% 33% 33%;
+                margin-left: 40px;
+                margin-right: 40px;
                 .skills-parts{
-                    padding: 0 16px;
+                    padding: 0 40px;
                     .parts-image {
                         width: 100%;
+                        padding: 16px, 0;
+                        margin-bottom: 24px;
                         img{
+                            //width: 100%;
                             max-height: 300px;
                         }
                     }
                     .parts-chr {
                         h3 {
                             font-size: 24px;
-                            font-weight: bold;
                             text-align: center;
                             margin-bottom: 24px;
                         }
@@ -246,18 +291,68 @@ main.wrapper {
 
         }
     }
-    .works {
-        margin-bottom: 128px;
+    #works {
+        padding-top: 128px;
+        padding-bottom: 32px;
+        width: 100%;
+        position: relative;
         .works-view {
-            display: flex;
-            justify-content: space-between;
-            .works-img {
-                width: 30%;
-                padding: 0 16px;
-                img {
-                    width: 100%;
+            // display: flex;
+            // justify-content: space-between;
+            // width: 100%;
+            margin-bottom: 32px;
+            .slider {
+                visibility: hidden;
+                li {
+                    width: 50%;
+                    margin: 0 88px;
+                    img {
+                        width: 100%;
+                        max-height: 400px;
+                    }
                 }
+            }
+
+            .slider.slick-initialized {
+                visibility: visible;
+            }
+        }
+        .view-more {
+            position: absolute;
+            left: 50%;
+            bottom: 0;
+            text-align: center;
+        }
+    }
+
+    #contact {
+        margin-top: 128px;
+        margin-bottom: 128px;
+        .contact-detail {
+            margin: 72px 0;
+            text-align: center;
+        }
+        .to-contact {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            cursor: pointer;
+            p{
+                display: block;
+                margin: 0;
+                width: 25%;
+                max-width: 328px;
+                height: 40px;
+                color: #FFF;
+                background-color: #5B9511;
+                text-align: center;
             }
         }
     }
+}
+
+footer.wrapper {
+    background-color: #FCFEEE;
+    text-align: center;
+    height: 120px;
 }

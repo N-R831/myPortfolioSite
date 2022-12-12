@@ -32,6 +32,35 @@ a {
   text-align: center;
 }
 
+.view-more span::before {
+  width: 3px;
+  height: 100%;
+  position: absolute;
+  content: "";
+  left: -10%;
+  bottom: 0;
+  background-color: #5B9511;
+}
+.view-more span::after {
+  width: 125%;
+  height: 3px;
+  position: absolute;
+  content: "";
+  left: -8px;
+  bottom: 0;
+  background-color: #5B9511;
+}
+.view-more a::after {
+  width: 3px;
+  height: 100%;
+  position: absolute;
+  content: "";
+  right: -20%;
+  bottom: 0;
+  background-color: #5B9511;
+  transform: translateX(-290%) rotate(320deg);
+}
+
 /********************
 header
 ********************/
@@ -66,7 +95,7 @@ header
   display: flex;
   justify-content: space-between;
 }
-#header #navi ul li {
+#header #navi ul li a {
   margin-right: 32px;
   padding-top: 64px;
   padding-left: 8px;
@@ -74,8 +103,13 @@ header
   border-bottom: solid 6px #5B9511;
   border-right: solid 6px #5B9511;
   border-left: solid 6px #5B9511;
-  border-radius: 0% 0% 6px 6px;
+  border-radius: 0% 0% 9px 9px;
   cursor: pointer;
+}
+#header #navi ul li:hover a {
+  padding-top: 88px;
+  color: #FFF;
+  background-color: #5B9511;
 }
 
 /********************
@@ -86,7 +120,6 @@ main.wrapper .main-visual {
   grid-template-columns: 30% 70%;
   grid-template-rows: 70% 30%;
   margin-top: 120px;
-  margin-bottom: 128px;
   height: 854px;
   height: 854px;
 }
@@ -130,7 +163,10 @@ main.wrapper .main-visual .main-image img {
   position: absolute;
   right: 0px;
 }
-main.wrapper .about .about-main {
+main.wrapper #about {
+  padding-top: 128px;
+}
+main.wrapper #about .about-main {
   width: 100%;
   height: 524px;
   display: grid;
@@ -139,7 +175,7 @@ main.wrapper .about .about-main {
   margin-left: 40px;
   margin-bottom: 128px;
 }
-main.wrapper .about .about-main .about-chr {
+main.wrapper #about .about-main .about-chr {
   grid-column: 1/2;
   background-color: #FCFEEE;
   display: flex;
@@ -151,15 +187,15 @@ main.wrapper .about .about-main .about-chr {
   line-height: 140%;
   position: relative;
 }
-main.wrapper .about .about-main .about-chr .view-more {
+main.wrapper #about .about-main .about-chr .view-more {
   position: absolute;
   bottom: 64px;
 }
-main.wrapper .about .about-main .about-img {
+main.wrapper #about .about-main .about-img {
   grid-column: 2/3;
   position: relative;
 }
-main.wrapper .about .about-main .about-img img {
+main.wrapper #about .about-main .about-img img {
   width: 472px;
   height: 400px;
   -o-object-fit: cover;
@@ -168,67 +204,115 @@ main.wrapper .about .about-main .about-img img {
   top: 56px;
   left: -32px;
 }
-main.wrapper .about .about-skills .skills-title {
+main.wrapper #about .about-skills .skills-title {
   margin-left: 96px;
   display: flex;
   justify-content: left;
 }
-main.wrapper .about .about-skills .skills-title::before {
+main.wrapper #about .about-skills .skills-title::before {
   content: "";
   display: block;
   width: 28px;
   height: 60px;
   background-color: #FCFEEE;
 }
-main.wrapper .about .about-skills .skills-title .parts-title {
+main.wrapper #about .about-skills .skills-title .parts-title {
   margin-left: 8px;
   font-size: 44px;
   font-family: "Noto Serif";
   text-align: center;
   align-items: center;
 }
-main.wrapper .about .about-skills .skills-title .parts-subtitle {
+main.wrapper #about .about-skills .skills-title .parts-subtitle {
   margin-left: 16px;
   font-size: 32px;
   align-items: center;
 }
-main.wrapper .about .about-skills .skills-title .parts-subtitle::before {
+main.wrapper #about .about-skills .skills-title .parts-subtitle::before {
   content: "- ";
 }
-main.wrapper .about .about-skills .skills-title .parts-subtitle::after {
+main.wrapper #about .about-skills .skills-title .parts-subtitle::after {
   content: " -";
 }
-main.wrapper .about .about-skills .block-skills {
-  display: flex;
+main.wrapper #about .about-skills .block-skills {
+  display: grid;
   justify-content: space-between;
-  margin-bottom: 128px;
+  grid-template-columns: 33% 33% 33%;
+  margin-left: 40px;
+  margin-right: 40px;
 }
-main.wrapper .about .about-skills .block-skills .skills-parts {
-  padding: 0 16px;
+main.wrapper #about .about-skills .block-skills .skills-parts {
+  padding: 0 40px;
 }
-main.wrapper .about .about-skills .block-skills .skills-parts .parts-image {
+main.wrapper #about .about-skills .block-skills .skills-parts .parts-image {
   width: 100%;
+  padding: 16px, 0;
+  margin-bottom: 24px;
 }
-main.wrapper .about .about-skills .block-skills .skills-parts .parts-image img {
+main.wrapper #about .about-skills .block-skills .skills-parts .parts-image img {
   max-height: 300px;
 }
-main.wrapper .about .about-skills .block-skills .skills-parts .parts-chr h3 {
+main.wrapper #about .about-skills .block-skills .skills-parts .parts-chr h3 {
   font-size: 24px;
-  font-weight: bold;
   text-align: center;
   margin-bottom: 24px;
 }
-main.wrapper .works {
+main.wrapper #works {
+  padding-top: 128px;
+  padding-bottom: 32px;
+  width: 100%;
+  position: relative;
+}
+main.wrapper #works .works-view {
+  margin-bottom: 32px;
+}
+main.wrapper #works .works-view .slider {
+  visibility: hidden;
+}
+main.wrapper #works .works-view .slider li {
+  width: 50%;
+  margin: 0 88px;
+}
+main.wrapper #works .works-view .slider li img {
+  width: 100%;
+  max-height: 400px;
+}
+main.wrapper #works .works-view .slider.slick-initialized {
+  visibility: visible;
+}
+main.wrapper #works .view-more {
+  position: absolute;
+  left: 50%;
+  bottom: 0;
+  text-align: center;
+}
+main.wrapper #contact {
+  margin-top: 128px;
   margin-bottom: 128px;
 }
-main.wrapper .works .works-view {
+main.wrapper #contact .contact-detail {
+  margin: 72px 0;
+  text-align: center;
+}
+main.wrapper #contact .to-contact {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
 }
-main.wrapper .works .works-view .works-img {
-  width: 30%;
-  padding: 0 16px;
+main.wrapper #contact .to-contact p {
+  display: block;
+  margin: 0;
+  width: 25%;
+  max-width: 328px;
+  height: 40px;
+  color: #FFF;
+  background-color: #5B9511;
+  text-align: center;
 }
-main.wrapper .works .works-view .works-img img {
-  width: 100%;
+
+footer.wrapper {
+  background-color: #FCFEEE;
+  text-align: center;
+  height: 120px;
 }/*# sourceMappingURL=style.css.map */

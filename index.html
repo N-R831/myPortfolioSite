@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.css">
     <link href="https://fonts.googleapis.com/css?family=Noto+Serif" rel="stylesheet">
     <link rel="stylesheet" href="css/destyle.css">
     <link rel="stylesheet" href="css/style.css">
@@ -21,10 +22,10 @@
         <nav id="navi">
             <ul class="nav-menu">
                 <li>
-                    <a href="">About</a>
+                    <a href="#about">About</a>
                 </li>
                 <li>
-                    <a href="">Works</a>
+                    <a href="#works">Works</a>
                 </li>
                 <li>
                     <a href="contact.html">Contact</a>
@@ -51,7 +52,7 @@
                 <img src="img/main-image.jpg" alt="mainn-image">
             </div>
         </div>
-        <div class="about">
+        <div id="about">
             <div class="title-header">
                 <h1 class="parts-title">
                     About
@@ -69,9 +70,7 @@
                         常にお客様の求めている機能を<br>追及するエンジニアになることを目指しています
                     <p>
                     <div class="view-more">
-                        <span></span>
-                        View More
-                        <span></span>
+                        <a href=""><span>View More</span></a>
                     </div>
                 </div>
                 <div class="about-img">
@@ -124,7 +123,7 @@
                 </div>
             </div>
         </div>
-        <div class="works">
+        <div id="works">
             <div class="title-header">
                 <h1 class="parts-title">
                     Works
@@ -134,29 +133,17 @@
                 </h4>
             </div>
             <div class="works-view">
-                <div class="works-img">
-                    <img src="img/works1.png" alt="works1">
-                </div>
-                <div class="slider-button-before">
-                    <span></span>
-                </div>
-                <div class="works-img">
-                    <img src="img/works2.png" alt="works2">
-                </div>
-                <div class="slider-button-after">
-                    <span></span>
-                </div>
-                <div class="works-img">
-                    <img src="img/works3.png" alt="works3">
-                </div>
+                <ul class="slider">
+                    <li><img src="img/works1.png" alt="works1"></li>
+                    <li><img src="img/works2.png" alt="works2"></li>
+                    <li><img src="img/works3.png" alt="works3"></li>
+                </ul>
             </div>
             <div class="view-more">
-                <span></span>
-                View More
-                <span></span>
+                <a href=""><span>View More</span></a>
             </div>
         </div>
-        <div class="contact">
+        <div id="contact">
             <div class="title-header">
                 <h1 class="parts-title">
                     Contact
@@ -167,15 +154,17 @@
             </div>
             <div class="contact-detail">
                 <p>お仕事のご相談やご依頼など、お気軽にご連絡ください</p>
-                <div class="to-contact">
-                    <p>お問い合わせページへ</p>
-                </div>
+            </div>
+            <div class="to-contact">
+                <p>お問い合わせページへ</p>
             </div>
         </div>
     </main>
     <footer id="footer" class="wrapper">
-        <p>© Ryoma Nishitsuji</p>
+        <span>© Ryoma Nishitsuji</span>
     </footer>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js"></script>
     <script src="js/main.js"></script>
 </body>
 </html>
