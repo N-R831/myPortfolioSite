@@ -49,7 +49,7 @@ a {
         height: 3px;
         position: absolute;
         content: "";
-        left: -8px;
+        left: -6%;
         bottom: 0;
         background-color: #5B9511;
     }
@@ -265,10 +265,11 @@ main.wrapper {
             .block-skills {
                 display: grid;
                 justify-content: space-between;
-                grid-template-columns: 33% 33% 33%;
+                grid-template-columns: 32% 32% 32%;
                 margin-left: 40px;
                 margin-right: 40px;
                 .skills-parts{
+                    box-shadow: 0 0 8px 4px #ccc;
                     padding: 0 40px;
                     .parts-image {
                         width: 100%;
