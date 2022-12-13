@@ -315,6 +315,13 @@ main.wrapper #contact .to-contact p {
   background-color: #5B9511;
   vertical-align: text-bottom;
 }
+main.wrapper #about-mainvisual {
+  margin-top: 120px;
+}
+main.wrapper #about-mainvisual .sec-main {
+  display: flex;
+  justify-content: space-between;
+}
 
 footer.wrapper {
   background-color: #FCFEEE;
