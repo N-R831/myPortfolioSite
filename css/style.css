@@ -156,6 +156,7 @@ main.wrapper .main-visual .profile-col1-row2 .profile-content {
 main.wrapper .main-visual .main-image {
   grid-row: 1/2;
   grid-column: 2/3;
+  width: 100%;
   position: relative;
 }
 main.wrapper .main-visual .main-image img {
