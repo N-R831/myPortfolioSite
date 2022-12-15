@@ -360,6 +360,29 @@ main.wrapper {
         .sec-main {
             display: flex;
             justify-content: space-between;
+            padding: 0 40px;
+            .about-chr {
+                width: 49%;
+                text-align: center;
+                display: flex;
+                justify-content: center;
+                flex-direction: column;
+                background-color: #FCFEEE;
+                p {
+                    display: block;
+
+                }
+            }
+            .about-img {
+                width: 48%;
+                //position: relative;
+                img {
+                    padding: 64px 16px;
+                    width: 100%;
+                    //position: absolute;
+                    left: -36px;
+                }
+            }
         }
     }
 }

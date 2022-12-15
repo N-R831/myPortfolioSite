@@ -321,6 +321,26 @@ main.wrapper #about-mainvisual {
 main.wrapper #about-mainvisual .sec-main {
   display: flex;
   justify-content: space-between;
+  padding: 0 40px;
+}
+main.wrapper #about-mainvisual .sec-main .about-chr {
+  width: 49%;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  background-color: #FCFEEE;
+}
+main.wrapper #about-mainvisual .sec-main .about-chr p {
+  display: block;
+}
+main.wrapper #about-mainvisual .sec-main .about-img {
+  width: 48%;
+}
+main.wrapper #about-mainvisual .sec-main .about-img img {
+  padding: 64px 16px;
+  width: 100%;
+  left: -36px;
 }
 
 footer.wrapper {
