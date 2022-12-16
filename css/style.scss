@@ -122,6 +122,7 @@ header
                     padding-top: 88px;
                     color: #FFF;
                     background-color: #5B9511;
+                    transform: translate(0px, 24px);
                 }
             }
         }
@@ -411,6 +412,57 @@ main.wrapper {
             }
 
             
+        }
+    }
+
+    #page-mainvisual {
+        margin-top: 128px;
+    }
+
+    #works-mainvisual {
+        margin-top: 128px;
+        .sec-thumbnail{
+            margin-top: 80px;
+            margin-bottom: 128px;
+            ul {
+                display: grid;
+                grid-gap: 40px;
+                grid-template-columns: repeat(2, 50%);
+                width: 100%;
+                padding: 0 40px;
+                li {
+                    width: 100%;
+                    padding: 0 40px;
+                    margin-bottom: 64px;
+                    h2 {
+                        font-size: 24px;
+                    }
+                    img {
+                        width: 100%;
+                        max-height: 248px;
+                        box-shadow: 0 0 8px 4px #ccc;
+                    }
+                }
+            }
+        }
+    }
+
+    #contact-mainvisual {
+        margin: 128px 0;
+        min-height: 100vh;
+        .sec-input {
+            .sec-input-text {
+                display: flex;
+                justify-content: center;
+                h3 {
+                    font-size: 32px;
+                    display: inline;
+                }
+                .required {
+                    color: #FD0000;
+                    display: block;
+                }
+            }
         }
     }
 }

@@ -110,6 +110,7 @@ header
   padding-top: 88px;
   color: #FFF;
   background-color: #5B9511;
+  transform: translate(0px, 24px);
 }
 
 /********************
@@ -367,6 +368,52 @@ main.wrapper #about-career .career-title p::before {
 }
 main.wrapper #about-career .career-title p::after {
   content: "-";
+}
+main.wrapper #page-mainvisual {
+  margin-top: 128px;
+}
+main.wrapper #works-mainvisual {
+  margin-top: 128px;
+}
+main.wrapper #works-mainvisual .sec-thumbnail {
+  margin-top: 80px;
+  margin-bottom: 128px;
+}
+main.wrapper #works-mainvisual .sec-thumbnail ul {
+  display: grid;
+  grid-gap: 40px;
+  grid-template-columns: repeat(2, 50%);
+  width: 100%;
+  padding: 0 40px;
+}
+main.wrapper #works-mainvisual .sec-thumbnail ul li {
+  width: 100%;
+  padding: 0 40px;
+  margin-bottom: 64px;
+}
+main.wrapper #works-mainvisual .sec-thumbnail ul li h2 {
+  font-size: 24px;
+}
+main.wrapper #works-mainvisual .sec-thumbnail ul li img {
+  width: 100%;
+  max-height: 248px;
+  box-shadow: 0 0 8px 4px #ccc;
+}
+main.wrapper #contact-mainvisual {
+  margin: 128px 0;
+  min-height: 100vh;
+}
+main.wrapper #contact-mainvisual .sec-input .sec-input-text {
+  display: flex;
+  justify-content: center;
+}
+main.wrapper #contact-mainvisual .sec-input .sec-input-text h3 {
+  font-size: 32px;
+  display: inline;
+}
+main.wrapper #contact-mainvisual .sec-input .sec-input-text .required {
+  color: #FD0000;
+  display: block;
 }
 
 footer.wrapper {
