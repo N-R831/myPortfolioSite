@@ -322,25 +322,51 @@ main.wrapper #about-mainvisual .sec-main {
   display: flex;
   justify-content: space-between;
   padding: 0 40px;
+  position: relative;
+  height: 50vh;
 }
 main.wrapper #about-mainvisual .sec-main .about-chr {
   width: 49%;
+  min-height: 624px;
   text-align: center;
   display: flex;
   justify-content: center;
   flex-direction: column;
   background-color: #FCFEEE;
+  position: absolute;
+  left: 0;
+  top: 0;
 }
 main.wrapper #about-mainvisual .sec-main .about-chr p {
   display: block;
 }
 main.wrapper #about-mainvisual .sec-main .about-img {
   width: 48%;
+  position: absolute;
+  right: 64px;
+  top: 0;
 }
 main.wrapper #about-mainvisual .sec-main .about-img img {
   padding: 64px 16px;
   width: 100%;
   left: -36px;
+}
+main.wrapper #about-career {
+  margin-top: 128px;
+}
+main.wrapper #about-career .career-title {
+  display: flex;
+  justify-content: center;
+}
+main.wrapper #about-career .career-title p {
+  margin-left: 16px;
+  vertical-align: middle;
+}
+main.wrapper #about-career .career-title p::before {
+  content: "-";
+}
+main.wrapper #about-career .career-title p::after {
+  content: "-";
 }
 
 footer.wrapper {

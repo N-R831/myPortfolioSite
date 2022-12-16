@@ -361,13 +361,19 @@ main.wrapper {
             display: flex;
             justify-content: space-between;
             padding: 0 40px;
+            position: relative;
+            height: 50vh;
             .about-chr {
                 width: 49%;
+                min-height: 624px;
                 text-align: center;
                 display: flex;
                 justify-content: center;
                 flex-direction: column;
                 background-color: #FCFEEE;
+                position: absolute;
+                left: 0;
+                top: 0;
                 p {
                     display: block;
 
@@ -375,7 +381,9 @@ main.wrapper {
             }
             .about-img {
                 width: 48%;
-                //position: relative;
+                position: absolute;
+                right: 64px;
+                top: 0;
                 img {
                     padding: 64px 16px;
                     width: 100%;
@@ -383,6 +391,26 @@ main.wrapper {
                     left: -36px;
                 }
             }
+        }
+    }
+
+    #about-career {
+        margin-top: 128px;
+        .career-title {
+            display: flex;
+            justify-content: center;
+            p {
+                margin-left: 16px;
+                vertical-align: middle;
+                &::before {
+                    content: "-";
+                }
+                &::after {
+                    content: "-";
+                }
+            }
+
+            
         }
     }
 }
