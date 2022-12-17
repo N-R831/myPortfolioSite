@@ -317,6 +317,9 @@ main.wrapper #contact .to-contact p {
   vertical-align: text-bottom;
 }
 main.wrapper #about-mainvisual {
+  /********************
+  about.html
+  ********************/
   margin-top: 120px;
 }
 main.wrapper #about-mainvisual .sec-main {
@@ -370,9 +373,18 @@ main.wrapper #about-career .career-title p::after {
   content: "-";
 }
 main.wrapper #page-mainvisual {
+  /********************
+  page.html
+  ********************/
   margin-top: 128px;
 }
+main.wrapper #page-mainvisual .title-header {
+  padding-top: 112px;
+}
 main.wrapper #works-mainvisual {
+  /********************
+  works.html
+  ********************/
   margin-top: 128px;
 }
 main.wrapper #works-mainvisual .sec-thumbnail {
@@ -400,22 +412,113 @@ main.wrapper #works-mainvisual .sec-thumbnail ul li img {
   box-shadow: 0 0 8px 4px #ccc;
 }
 main.wrapper #contact-mainvisual {
+  /********************
+  contact.html
+  ********************/
   margin: 128px 0;
   min-height: 100vh;
 }
-main.wrapper #contact-mainvisual .sec-input .sec-input-text {
+main.wrapper #contact-mainvisual .sec-input .sec-input-content {
+  margin-top: 72px;
+}
+main.wrapper #contact-mainvisual .sec-input #sec-input-name {
   display: flex;
   justify-content: center;
+  flex-direction: column;
+  align-items: center;
 }
-main.wrapper #contact-mainvisual .sec-input .sec-input-text h3 {
+main.wrapper #contact-mainvisual .sec-input #sec-input-name .sec-input-text {
+  display: flex;
+  justify-content: left;
+  margin-bottom: 16px;
+  width: 50%;
+}
+main.wrapper #contact-mainvisual .sec-input #sec-input-name .sec-input-text h3 {
   font-size: 32px;
   display: inline;
 }
-main.wrapper #contact-mainvisual .sec-input .sec-input-text .required {
+main.wrapper #contact-mainvisual .sec-input #sec-input-name .sec-input-text .required {
   color: #FD0000;
-  display: block;
+  display: inline;
+}
+main.wrapper #contact-mainvisual .sec-input #sec-input-name input {
+  width: 50%;
+  height: 40px;
+  border: #AEAEAE solid 1px;
+  border-radius: 8px;
+  padding: 8px;
+}
+main.wrapper #contact-mainvisual .sec-input #sec-input-mail {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+main.wrapper #contact-mainvisual .sec-input #sec-input-mail .sec-input-text {
+  display: flex;
+  justify-content: left;
+  margin-bottom: 16px;
+  width: 50%;
+}
+main.wrapper #contact-mainvisual .sec-input #sec-input-mail .sec-input-text h3 {
+  font-size: 32px;
+  display: inline;
+}
+main.wrapper #contact-mainvisual .sec-input #sec-input-mail .sec-input-text .required {
+  color: #FD0000;
+  display: inline;
+}
+main.wrapper #contact-mainvisual .sec-input #sec-input-mail input {
+  width: 50%;
+  height: 40px;
+  border: #AEAEAE solid 1px;
+  border-radius: 8px;
+  padding: 8px;
+}
+main.wrapper #contact-mainvisual .sec-input #sec-input-contact {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+main.wrapper #contact-mainvisual .sec-input #sec-input-contact .sec-input-text {
+  display: flex;
+  justify-content: left;
+  margin-bottom: 16px;
+  width: 50%;
+}
+main.wrapper #contact-mainvisual .sec-input #sec-input-contact .sec-input-text h3 {
+  font-size: 32px;
+  display: inline;
+}
+main.wrapper #contact-mainvisual .sec-input #sec-input-contact .sec-input-text .required {
+  color: #FD0000;
+  display: inline;
+}
+main.wrapper #contact-mainvisual .sec-input #sec-input-contact textarea {
+  width: 50%;
+  height: 425px;
+  border: #AEAEAE solid 1px;
+  border-radius: 16px;
+  padding: 8px;
+}
+main.wrapper #contact-mainvisual .sec-button {
+  text-align: center;
+  margin-top: 72px;
+}
+main.wrapper #contact-mainvisual .sec-button button {
+  width: 640px;
+  height: 40px;
+  border: #5B9511 solid 1px;
+  border-radius: 8px;
+  background-color: #5B9511;
+  color: #FFF;
+  font-size: 24px;
 }
 
+/********************
+footer
+********************/
 footer.wrapper {
   background-color: #FCFEEE;
   height: 120px;

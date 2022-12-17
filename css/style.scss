@@ -296,15 +296,14 @@ main.wrapper {
 
         }
     }
+
     #works {
         padding-top: 128px;
         padding-bottom: 32px;
         width: 100%;
         position: relative;
         .works-view {
-            // display: flex;
-            // justify-content: space-between;
-            // width: 100%;
+
             margin-bottom: 32px;
             .slider {
                 visibility: hidden;
@@ -357,6 +356,9 @@ main.wrapper {
     }
 
     #about-mainvisual {
+    /********************
+    about.html
+    ********************/
         margin-top: 120px;
         .sec-main {
             display: flex;
@@ -416,10 +418,19 @@ main.wrapper {
     }
 
     #page-mainvisual {
+    /********************
+    page.html
+    ********************/
         margin-top: 128px;
+        .title-header {
+            padding-top: 112px;
+        }
     }
 
     #works-mainvisual {
+    /********************
+    works.html
+    ********************/
         margin-top: 128px;
         .sec-thumbnail{
             margin-top: 80px;
@@ -448,25 +459,123 @@ main.wrapper {
     }
 
     #contact-mainvisual {
+    /********************
+    contact.html
+    ********************/
         margin: 128px 0;
         min-height: 100vh;
         .sec-input {
-            .sec-input-text {
+            .sec-input-content {
+                margin-top: 72px;
+            }
+
+            #sec-input-name  {
                 display: flex;
                 justify-content: center;
-                h3 {
-                    font-size: 32px;
-                    display: inline;
+                flex-direction: column;
+                align-items: center;
+                .sec-input-text {
+                    display: flex;
+                    justify-content: left;
+                    margin-bottom: 16px;
+                    width: 50%;
+                    h3 {
+                        font-size: 32px;
+                        display: inline;
+                    }
+                    .required {
+                        color: #FD0000;
+                        display: inline;
+                    }
                 }
-                .required {
-                    color: #FD0000;
-                    display: block;
+
+                input {
+                    width: 50%;
+                    height: 40px;
+                    border: #AEAEAE solid 1px;
+                    border-radius: 8px;
+                    padding: 8px;
                 }
+            }
+
+            #sec-input-mail {
+                display: flex;
+                justify-content: center;
+                flex-direction: column;
+                align-items: center;
+                .sec-input-text {
+                    display: flex;
+                    justify-content: left;
+                    margin-bottom: 16px;
+                    width: 50%;
+                    h3 {
+                        font-size: 32px;
+                        display: inline;
+                    }
+                    .required {
+                        color: #FD0000;
+                        display: inline;
+                    }
+                }
+
+                input {
+                    width: 50%;
+                    height: 40px;
+                    border: #AEAEAE solid 1px;
+                    border-radius: 8px;
+                    padding: 8px;
+                }
+            }
+
+            #sec-input-contact {
+                display: flex;
+                justify-content: center;
+                flex-direction: column;
+                align-items: center;
+                .sec-input-text {
+                    display: flex;
+                    justify-content: left;
+                    margin-bottom: 16px;
+                    width: 50%;
+                    h3 {
+                        font-size: 32px;
+                        display: inline;
+                    }
+                    .required {
+                        color: #FD0000;
+                        display: inline;
+                    }
+                }
+
+                textarea {
+                    width: 50%;
+                    height: 425px;
+                    border: #AEAEAE solid 1px;
+                    border-radius: 16px;
+                    padding: 8px;
+                }
+            }
+
+        }
+        .sec-button {
+            text-align: center;
+            margin-top: 72px;
+            button {
+                width: 640px;
+                height: 40px;
+                border: #5B9511 solid 1px;
+                border-radius: 8px;
+                background-color: #5B9511;
+                color: #FFF;
+                font-size: 24px;
             }
         }
     }
 }
 
+/********************
+footer
+********************/
 footer.wrapper {
     background-color: #FCFEEE;
     height: 120px;
