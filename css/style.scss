@@ -425,6 +425,24 @@ main.wrapper {
         .title-header {
             padding-top: 112px;
         }
+
+        .wroks-images {
+            width: 100%;
+            display: grid;
+            grid-template-columns: 70% 30%;
+            position: relative;
+            #img-PC {
+                width: 100%;
+                grid-column: 1 / 2;
+            }
+            #img-SP {
+                // position: fixed;
+                // top: 64px;
+                // right: 48px;
+                width: 100%;
+                grid-column: 2 / 3;
+            }
+        }
     }
 
     #works-mainvisual {
