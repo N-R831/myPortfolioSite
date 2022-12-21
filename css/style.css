@@ -330,11 +330,11 @@ main.wrapper #about-mainvisual .sec-main {
   justify-content: space-between;
   padding: 0 40px;
   position: relative;
-  height: 50vh;
+  height: 80vh;
 }
 main.wrapper #about-mainvisual .sec-main .about-chr {
   width: 49%;
-  min-height: 624px;
+  min-height: 524px;
   text-align: center;
   display: flex;
   justify-content: center;
@@ -374,6 +374,25 @@ main.wrapper #about-career .career-title p::before {
 }
 main.wrapper #about-career .career-title p::after {
   content: "-";
+}
+main.wrapper #about-career .career-main {
+  display: flex;
+  justify-content: center;
+}
+main.wrapper #about-career .career-main .career-right {
+  margin-left: 32px;
+  border-left: #DDDDDD solid 1px;
+}
+main.wrapper #about-career .career-main .career-right .career-heading::before {
+  content: "";
+  display: block;
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  background: #FCFEEE;
+  position: absolute;
+  top: 45px;
+  left: -8px;
 }
 main.wrapper #page-mainvisual {
   /********************

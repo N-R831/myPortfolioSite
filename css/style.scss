@@ -367,10 +367,10 @@ main.wrapper {
             justify-content: space-between;
             padding: 0 40px;
             position: relative;
-            height: 50vh;
+            height: 80vh;
             .about-chr {
                 width: 49%;
-                min-height: 624px;
+                min-height: 524px;
                 text-align: center;
                 display: flex;
                 justify-content: center;
@@ -414,8 +414,31 @@ main.wrapper {
                     content: "-";
                 }
             }
+        }
 
-            
+        .career-main {
+            display: flex;
+            justify-content: center;
+            // .career-left {
+            //     margin-left: 32px;
+            // }
+            .career-right {
+                margin-left: 32px;
+                border-left: #DDDDDD solid 1px;
+                .career-heading {
+                    &::before {
+                        content: "";
+                        display: block;
+                        width: 15px;
+                        height: 15px;
+                        border-radius: 50%;
+                        background: #FCFEEE;
+                        position: absolute;
+                        top: 45px;
+                        left: -8px;
+                    }
+                }
+            }
         }
     }
 
