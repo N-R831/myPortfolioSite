@@ -349,7 +349,7 @@ main.wrapper {
                 margin: 0;
                 width: 25%;
                 max-width: 328px;
-                height: 40px;
+                padding: 20px 0;
                 color: #FFF;
                 background-color: #5B9511;
                 vertical-align: text-bottom;
@@ -419,13 +419,17 @@ main.wrapper {
         .career-main {
             display: flex;
             justify-content: center;
-            // .career-left {
-            //     margin-left: 32px;
-            // }
+            margin: 0 auto;
+            .career-left {
+                margin-right: 32px;
+                width: 15%;
+            }
             .career-right {
-                margin-left: 32px;
+                width: 85%;
+                padding-left: 32px;
                 border-left: #DDDDDD solid 1px;
                 .career-heading {
+                    position: relative;
                     &::before {
                         content: "";
                         display: block;
@@ -434,8 +438,8 @@ main.wrapper {
                         border-radius: 50%;
                         background: #FCFEEE;
                         position: absolute;
-                        top: 45px;
-                        left: -8px;
+                        top: 0px;
+                        left: -40px;
                     }
                 }
             }
@@ -621,11 +625,8 @@ footer
 ********************/
 footer.wrapper {
     background-color: #FCFEEE;
-    height: 120px;
     .footer {
+        padding: 40px 0;
         text-align: center;
-        span {
-            vertical-align: middle;
-        }
     }
 }

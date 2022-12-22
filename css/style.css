@@ -314,7 +314,7 @@ main.wrapper #contact .to-contact p {
   margin: 0;
   width: 25%;
   max-width: 328px;
-  height: 40px;
+  padding: 20px 0;
   color: #FFF;
   background-color: #5B9511;
   vertical-align: text-bottom;
@@ -378,10 +378,19 @@ main.wrapper #about-career .career-title p::after {
 main.wrapper #about-career .career-main {
   display: flex;
   justify-content: center;
+  margin: 0 auto;
+}
+main.wrapper #about-career .career-main .career-left {
+  margin-right: 32px;
+  width: 15%;
 }
 main.wrapper #about-career .career-main .career-right {
-  margin-left: 32px;
+  width: 85%;
+  padding-left: 32px;
   border-left: #DDDDDD solid 1px;
+}
+main.wrapper #about-career .career-main .career-right .career-heading {
+  position: relative;
 }
 main.wrapper #about-career .career-main .career-right .career-heading::before {
   content: "";
@@ -391,8 +400,8 @@ main.wrapper #about-career .career-main .career-right .career-heading::before {
   border-radius: 50%;
   background: #FCFEEE;
   position: absolute;
-  top: 45px;
-  left: -8px;
+  top: 0px;
+  left: -40px;
 }
 main.wrapper #page-mainvisual {
   /********************
@@ -557,11 +566,8 @@ footer
 ********************/
 footer.wrapper {
   background-color: #FCFEEE;
-  height: 120px;
 }
 footer.wrapper .footer {
+  padding: 40px 0;
   text-align: center;
-}
-footer.wrapper .footer span {
-  vertical-align: middle;
 }/*# sourceMappingURL=style.css.map */
