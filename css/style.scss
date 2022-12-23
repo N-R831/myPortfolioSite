@@ -291,7 +291,11 @@ main.wrapper {
                         h3 {
                             font-size: 24px;
                             text-align: center;
-                            margin-bottom: 24px;
+                            padding-bottom: 24px;
+                        }
+
+                        h5 {
+                            padding-bottom: 24px;
                         }
                     }
                 }
@@ -623,7 +627,7 @@ main.wrapper {
 /********************
 footer
 ********************/
-footer.wrapper {
+footer {
     background-color: #FCFEEE;
     .footer {
         padding: 40px 0;

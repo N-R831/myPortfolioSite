@@ -263,7 +263,10 @@ main.wrapper #about .about-skills .block-skills .skills-parts .parts-image img {
 main.wrapper #about .about-skills .block-skills .skills-parts .parts-chr h3 {
   font-size: 24px;
   text-align: center;
-  margin-bottom: 24px;
+  padding-bottom: 24px;
+}
+main.wrapper #about .about-skills .block-skills .skills-parts .parts-chr h5 {
+  padding-bottom: 24px;
 }
 main.wrapper #works {
   padding-top: 128px;
@@ -563,10 +566,10 @@ main.wrapper #contact-mainvisual .sec-button button {
 /********************
 footer
 ********************/
-footer.wrapper {
+footer {
   background-color: #FCFEEE;
 }
-footer.wrapper .footer {
+footer .footer {
   padding: 40px 0;
   text-align: center;
 }/*# sourceMappingURL=style.css.map */
