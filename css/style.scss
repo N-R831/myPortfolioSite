@@ -312,15 +312,15 @@ main.wrapper {
         .works-view {
 
             margin-bottom: 32px;
-            .slider {
-                visibility: hidden;
-                li {
+            .js-slide {
+                // visibility: hidden;
+                .item {
                     width: 50%;
                     margin: 0 88px;
                     box-shadow: 0 0 8px 4px #ccc;
                     img {
                         width: 100%;
-                        max-height: 400px;
+                        height: auto;
                     }
                 }
             }

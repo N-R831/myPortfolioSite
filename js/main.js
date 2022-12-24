@@ -20,16 +20,17 @@ for (let i = 0; i < smoothScrollTrigger.length; i++){
 
 // PICK UP スライダー
 $(function() {
-    $('.slider').slick({
+    $('.js-slide').slick({
         arrows: false,
         centerMode: true,
-        centerPadding: '100px',
+        variableWidth: true,
+        //centerPadding: '100px',
         slidesToShow: 1,
         responsive: [
           {
             breakpoint: 768,
             settings: {
-              centerPadding: '50px',
+              //centerPadding: '50px',
               slidesToShow: 1
             }
           }

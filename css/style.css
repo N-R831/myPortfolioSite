@@ -277,17 +277,14 @@ main.wrapper #works {
 main.wrapper #works .works-view {
   margin-bottom: 32px;
 }
-main.wrapper #works .works-view .slider {
-  visibility: hidden;
-}
-main.wrapper #works .works-view .slider li {
+main.wrapper #works .works-view .js-slide .item {
   width: 50%;
   margin: 0 88px;
   box-shadow: 0 0 8px 4px #ccc;
 }
-main.wrapper #works .works-view .slider li img {
+main.wrapper #works .works-view .js-slide .item img {
   width: 100%;
-  max-height: 400px;
+  height: auto;
 }
 main.wrapper #works .works-view .slider.slick-initialized {
   visibility: visible;
