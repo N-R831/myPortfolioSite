@@ -35,36 +35,10 @@ a {
 }
 
 .view-more {
-    span::before {
-        width: 3px;
-        height: 100%;
-        position: absolute;
-        content: "";
-        left: -10%;
-        bottom: 0;
-        background-color: #5B9511;
+    width: 15%;
+    img {
+        width: 100%;
     }
-    span::after {
-        width: 125%;
-        height: 3px;
-        position: absolute;
-        content: "";
-        left: -6%;
-        bottom: 0;
-        background-color: #5B9511;
-    }
-
-    a::after {
-        width: 3px;
-        height: 100%;
-        position: absolute;
-        content: "";
-        right: -20%;
-        bottom: 0;
-        background-color: #5B9511;
-        transform: translateX(-290%) rotate(320deg);
-    }
-
 }
 
 /********************
@@ -134,9 +108,9 @@ header
 /********************
 main
 ********************/
-main.wrapper {
+main {
     //margin-top: 120px;
-    .main-visual {
+    .main-visual.wrapper {
         display: grid;
         grid-template-columns: 30% 70%;
         grid-template-rows: 70% 30%;
@@ -194,7 +168,7 @@ main.wrapper {
         }
     }
 
-    #about {
+    #about.wrapper {
         padding-top: 128px;
         .about-main {
             width: 100%;
@@ -239,6 +213,7 @@ main.wrapper {
         .about-skills {
             .skills-title {
                 margin-left: 96px;
+                margin-bottom: 64px;
                 &::before {
                     content: "";
                     display: block;
@@ -257,12 +232,12 @@ main.wrapper {
                     align-items: center;
                 }
                 .parts-subtitle {
+                    margin: auto;
                     margin-left: 16px;
+                    font-size: 32px;
                     &::before {
                         content: "- ";
                     }
-                    font-size: 32px;
-                    align-items: center;
                     &::after {
                         content: " -";
                     }
@@ -310,19 +285,19 @@ main.wrapper {
         width: 100%;
         position: relative;
         .works-view {
-
+            margin-top: 96px;
             margin-bottom: 32px;
-            .js-slide {
-                // visibility: hidden;
-                .item {
-                    width: 50%;
-                    margin: 0 88px;
-                    box-shadow: 0 0 8px 4px #ccc;
+            .slider {
+                margin: 0 auto;
+                max-width: 100%;
+                .slider-img {
+                    padding: 0 88px;
                     img {
-                        width: 100%;
                         height: auto;
+                        width: 100%;
+                        aspect-ratio: 2 / 1;
                     }
-                }
+                  }
             }
 
             .slider.slick-initialized {
@@ -332,12 +307,10 @@ main.wrapper {
         .view-more {
             position: absolute;
             left: 50%;
-            bottom: 0;
-            text-align: center;
         }
     }
 
-    #contact {
+    #contact.wrapper {
         margin-top: 128px;
         margin-bottom: 128px;
         .contact-detail {
@@ -361,7 +334,7 @@ main.wrapper {
         }
     }
 
-    #about-mainvisual {
+    #about-mainvisual.wrapper {
     /********************
     about.html
     ********************/
@@ -403,14 +376,28 @@ main.wrapper {
         }
     }
 
-    #about-career {
+    #about-career.wrapper {
         margin-top: 128px;
         .career-title {
             display: flex;
             justify-content: center;
+            margin-bottom: 48px;
+            &::before {
+                content: "";
+                display: block;
+                width: 28px;
+                height: 60px;
+                background-color: #FCFEEE;
+                margin-right: 24px;
+            }
+            h1 {
+                font-size: 44px;
+            }
             p {
+                margin: auto 0;
                 margin-left: 16px;
                 vertical-align: middle;
+                font-size: 32px;
                 &::before {
                     content: "-";
                 }
@@ -424,6 +411,7 @@ main.wrapper {
             display: flex;
             justify-content: center;
             margin: 0 auto;
+            padding: 0 30%;
             .career-left {
                 margin-right: 32px;
                 width: 15%;
@@ -609,16 +597,22 @@ main.wrapper {
 
         }
         .sec-button {
-            text-align: center;
+            margin: 0 auto;
             margin-top: 72px;
-            button {
-                width: 640px;
-                height: 40px;
+            width: 20%;
+            div {
+                padding: 16px 40px;
                 border: #5B9511 solid 1px;
                 border-radius: 8px;
                 background-color: #5B9511;
                 color: #FFF;
                 font-size: 24px;
+                text-align: center;
+                
+            }
+
+            div:hover {
+                cursor: pointer;
             }
         }
     }

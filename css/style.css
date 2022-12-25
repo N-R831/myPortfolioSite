@@ -33,33 +33,11 @@ a {
   text-align: center;
 }
 
-.view-more span::before {
-  width: 3px;
-  height: 100%;
-  position: absolute;
-  content: "";
-  left: -10%;
-  bottom: 0;
-  background-color: #5B9511;
+.view-more {
+  width: 15%;
 }
-.view-more span::after {
-  width: 125%;
-  height: 3px;
-  position: absolute;
-  content: "";
-  left: -6%;
-  bottom: 0;
-  background-color: #5B9511;
-}
-.view-more a::after {
-  width: 3px;
-  height: 100%;
-  position: absolute;
-  content: "";
-  right: -20%;
-  bottom: 0;
-  background-color: #5B9511;
-  transform: translateX(-290%) rotate(320deg);
+.view-more img {
+  width: 100%;
 }
 
 /********************
@@ -119,7 +97,7 @@ header
 /********************
 main
 ********************/
-main.wrapper .main-visual {
+main .main-visual.wrapper {
   display: grid;
   grid-template-columns: 30% 70%;
   grid-template-rows: 70% 30%;
@@ -127,53 +105,53 @@ main.wrapper .main-visual {
   height: 100vh;
   height: 854px;
 }
-main.wrapper .main-visual .profile-col1-row1 {
+main .main-visual.wrapper .profile-col1-row1 {
   padding: 0 40px;
   grid-row: 1/2;
   grid-column: 1/2;
   position: relative;
   z-index: 10;
 }
-main.wrapper .main-visual .profile-col1-row1 #profile-name {
+main .main-visual.wrapper .profile-col1-row1 #profile-name {
   position: absolute;
   top: 236px;
   display: block;
   font-size: 64px;
   font-family: "Noto Serif";
 }
-main.wrapper .main-visual .profile-col1-row1 #profile-title {
+main .main-visual.wrapper .profile-col1-row1 #profile-title {
   position: absolute;
   top: 320px;
   display: block;
 }
-main.wrapper .main-visual .profile-col1-row2 {
+main .main-visual.wrapper .profile-col1-row2 {
   grid-row: 2/3;
   grid-column: 1/3;
   position: relative;
   z-index: 10;
 }
-main.wrapper .main-visual .profile-col1-row2 .profile-content {
+main .main-visual.wrapper .profile-col1-row2 .profile-content {
   position: absolute;
   left: 56px;
   bottom: 96px;
   font-size: 24px;
   display: block;
 }
-main.wrapper .main-visual .main-image {
+main .main-visual.wrapper .main-image {
   grid-row: 1/2;
   grid-column: 2/3;
   width: 100%;
   position: relative;
 }
-main.wrapper .main-visual .main-image img {
+main .main-visual.wrapper .main-image img {
   width: 100%;
   position: absolute;
   right: 0px;
 }
-main.wrapper #about {
+main #about.wrapper {
   padding-top: 128px;
 }
-main.wrapper #about .about-main {
+main #about.wrapper .about-main {
   width: 100%;
   display: grid;
   grid-template-columns: 53% 47%;
@@ -181,7 +159,7 @@ main.wrapper #about .about-main {
   margin-left: 40px;
   margin-bottom: 128px;
 }
-main.wrapper #about .about-main .about-chr {
+main #about.wrapper .about-main .about-chr {
   grid-column: 1/2;
   background-color: #FCFEEE;
   display: flex;
@@ -194,15 +172,15 @@ main.wrapper #about .about-main .about-chr {
   position: relative;
   padding: 256px 128px;
 }
-main.wrapper #about .about-main .about-chr .view-more {
+main #about.wrapper .about-main .about-chr .view-more {
   position: absolute;
   bottom: 64px;
 }
-main.wrapper #about .about-main .about-img {
+main #about.wrapper .about-main .about-img {
   grid-column: 2/3;
   position: relative;
 }
-main.wrapper #about .about-main .about-img img {
+main #about.wrapper .about-main .about-img img {
   width: 472px;
   height: 400px;
   -o-object-fit: cover;
@@ -211,99 +189,102 @@ main.wrapper #about .about-main .about-img img {
   top: 56px;
   left: -32px;
 }
-main.wrapper #about .about-skills .skills-title {
+main #about.wrapper .about-skills .skills-title {
   margin-left: 96px;
+  margin-bottom: 64px;
   display: flex;
   justify-content: left;
 }
-main.wrapper #about .about-skills .skills-title::before {
+main #about.wrapper .about-skills .skills-title::before {
   content: "";
   display: block;
   width: 28px;
   height: 60px;
   background-color: #FCFEEE;
 }
-main.wrapper #about .about-skills .skills-title .parts-title {
+main #about.wrapper .about-skills .skills-title .parts-title {
   margin-left: 8px;
   font-size: 44px;
   font-family: "Noto Serif";
   text-align: center;
   align-items: center;
 }
-main.wrapper #about .about-skills .skills-title .parts-subtitle {
+main #about.wrapper .about-skills .skills-title .parts-subtitle {
+  margin: auto;
   margin-left: 16px;
   font-size: 32px;
-  align-items: center;
 }
-main.wrapper #about .about-skills .skills-title .parts-subtitle::before {
+main #about.wrapper .about-skills .skills-title .parts-subtitle::before {
   content: "- ";
 }
-main.wrapper #about .about-skills .skills-title .parts-subtitle::after {
+main #about.wrapper .about-skills .skills-title .parts-subtitle::after {
   content: " -";
 }
-main.wrapper #about .about-skills .block-skills {
+main #about.wrapper .about-skills .block-skills {
   display: grid;
   justify-content: space-between;
   grid-template-columns: 32% 32% 32%;
   margin-left: 40px;
   margin-right: 40px;
 }
-main.wrapper #about .about-skills .block-skills .skills-parts {
+main #about.wrapper .about-skills .block-skills .skills-parts {
   box-shadow: 0 0 8px 4px #ccc;
   padding: 0 40px;
 }
-main.wrapper #about .about-skills .block-skills .skills-parts .parts-image {
+main #about.wrapper .about-skills .block-skills .skills-parts .parts-image {
   width: 100%;
   padding: 16px, 0;
   margin-bottom: 24px;
 }
-main.wrapper #about .about-skills .block-skills .skills-parts .parts-image img {
+main #about.wrapper .about-skills .block-skills .skills-parts .parts-image img {
   max-height: 300px;
 }
-main.wrapper #about .about-skills .block-skills .skills-parts .parts-chr h3 {
+main #about.wrapper .about-skills .block-skills .skills-parts .parts-chr h3 {
   font-size: 24px;
   text-align: center;
   padding-bottom: 24px;
 }
-main.wrapper #about .about-skills .block-skills .skills-parts .parts-chr h5 {
+main #about.wrapper .about-skills .block-skills .skills-parts .parts-chr h5 {
   padding-bottom: 24px;
 }
-main.wrapper #works {
+main #works {
   padding-top: 128px;
   padding-bottom: 32px;
   width: 100%;
   position: relative;
 }
-main.wrapper #works .works-view {
+main #works .works-view {
+  margin-top: 96px;
   margin-bottom: 32px;
 }
-main.wrapper #works .works-view .js-slide .item {
-  width: 50%;
-  margin: 0 88px;
-  box-shadow: 0 0 8px 4px #ccc;
+main #works .works-view .slider {
+  margin: 0 auto;
+  max-width: 100%;
 }
-main.wrapper #works .works-view .js-slide .item img {
-  width: 100%;
+main #works .works-view .slider .slider-img {
+  padding: 0 88px;
+}
+main #works .works-view .slider .slider-img img {
   height: auto;
+  width: 100%;
+  aspect-ratio: 2/1;
 }
-main.wrapper #works .works-view .slider.slick-initialized {
+main #works .works-view .slider.slick-initialized {
   visibility: visible;
 }
-main.wrapper #works .view-more {
+main #works .view-more {
   position: absolute;
   left: 50%;
-  bottom: 0;
-  text-align: center;
 }
-main.wrapper #contact {
+main #contact.wrapper {
   margin-top: 128px;
   margin-bottom: 128px;
 }
-main.wrapper #contact .contact-detail {
+main #contact.wrapper .contact-detail {
   margin: 72px 0;
   text-align: center;
 }
-main.wrapper #contact .to-contact {
+main #contact.wrapper .to-contact {
   display: flex;
   justify-content: center;
   cursor: pointer;
@@ -311,27 +292,27 @@ main.wrapper #contact .to-contact {
   width: 25%;
   margin: 0 auto;
 }
-main.wrapper #contact .to-contact a {
+main #contact.wrapper .to-contact a {
   margin: 0;
   max-width: 328px;
   padding: 20px 16px;
   color: #FFF;
   background-color: #5B9511;
 }
-main.wrapper #about-mainvisual {
+main #about-mainvisual.wrapper {
   /********************
   about.html
   ********************/
   margin-top: 120px;
 }
-main.wrapper #about-mainvisual .sec-main {
+main #about-mainvisual.wrapper .sec-main {
   display: flex;
   justify-content: space-between;
   padding: 0 40px;
   position: relative;
   height: 80vh;
 }
-main.wrapper #about-mainvisual .sec-main .about-chr {
+main #about-mainvisual.wrapper .sec-main .about-chr {
   width: 49%;
   min-height: 524px;
   text-align: center;
@@ -343,55 +324,70 @@ main.wrapper #about-mainvisual .sec-main .about-chr {
   left: 0;
   top: 0;
 }
-main.wrapper #about-mainvisual .sec-main .about-chr p {
+main #about-mainvisual.wrapper .sec-main .about-chr p {
   display: block;
 }
-main.wrapper #about-mainvisual .sec-main .about-img {
+main #about-mainvisual.wrapper .sec-main .about-img {
   width: 48%;
   position: absolute;
   right: 64px;
   top: 0;
 }
-main.wrapper #about-mainvisual .sec-main .about-img img {
+main #about-mainvisual.wrapper .sec-main .about-img img {
   padding: 64px 16px;
   width: 100%;
   left: -36px;
 }
-main.wrapper #about-career {
+main #about-career.wrapper {
   margin-top: 128px;
 }
-main.wrapper #about-career .career-title {
+main #about-career.wrapper .career-title {
   display: flex;
   justify-content: center;
+  margin-bottom: 48px;
 }
-main.wrapper #about-career .career-title p {
+main #about-career.wrapper .career-title::before {
+  content: "";
+  display: block;
+  width: 28px;
+  height: 60px;
+  background-color: #FCFEEE;
+  margin-right: 24px;
+}
+main #about-career.wrapper .career-title h1 {
+  font-size: 44px;
+}
+main #about-career.wrapper .career-title p {
+  margin: auto 0;
   margin-left: 16px;
   vertical-align: middle;
+  font-size: 32px;
 }
-main.wrapper #about-career .career-title p::before {
+main #about-career.wrapper .career-title p::before {
   content: "-";
 }
-main.wrapper #about-career .career-title p::after {
+main #about-career.wrapper .career-title p::after {
   content: "-";
 }
-main.wrapper #about-career .career-main {
+main #about-career.wrapper .career-main {
   display: flex;
   justify-content: center;
   margin: 0 auto;
+  padding: 0 30%;
 }
-main.wrapper #about-career .career-main .career-left {
+main #about-career.wrapper .career-main .career-left {
   margin-right: 32px;
   width: 15%;
 }
-main.wrapper #about-career .career-main .career-right {
+main #about-career.wrapper .career-main .career-right {
   width: 85%;
   padding-left: 32px;
   border-left: #DDDDDD solid 1px;
 }
-main.wrapper #about-career .career-main .career-right .career-heading {
+main #about-career.wrapper .career-main .career-right .career-heading {
   position: relative;
 }
-main.wrapper #about-career .career-main .career-right .career-heading::before {
+main #about-career.wrapper .career-main .career-right .career-heading::before {
   content: "";
   display: block;
   width: 15px;
@@ -402,162 +398,166 @@ main.wrapper #about-career .career-main .career-right .career-heading::before {
   top: 0px;
   left: -40px;
 }
-main.wrapper #page-mainvisual {
+main #page-mainvisual {
   /********************
   page.html
   ********************/
   margin-top: 128px;
 }
-main.wrapper #page-mainvisual .title-header {
+main #page-mainvisual .title-header {
   padding-top: 112px;
 }
-main.wrapper #page-mainvisual .wroks-images {
+main #page-mainvisual .wroks-images {
   width: 100%;
   display: grid;
   grid-template-columns: 70% 30%;
   position: relative;
 }
-main.wrapper #page-mainvisual .wroks-images #img-PC {
+main #page-mainvisual .wroks-images #img-PC {
   width: 100%;
   grid-column: 1/2;
 }
-main.wrapper #page-mainvisual .wroks-images #img-SP {
+main #page-mainvisual .wroks-images #img-SP {
   width: 100%;
   grid-column: 2/3;
 }
-main.wrapper #works-mainvisual {
+main #works-mainvisual {
   /********************
   works.html
   ********************/
   margin-top: 128px;
 }
-main.wrapper #works-mainvisual .sec-thumbnail {
+main #works-mainvisual .sec-thumbnail {
   margin-top: 80px;
   margin-bottom: 128px;
 }
-main.wrapper #works-mainvisual .sec-thumbnail ul {
+main #works-mainvisual .sec-thumbnail ul {
   display: grid;
   grid-gap: 40px;
   grid-template-columns: repeat(2, 50%);
   width: 100%;
   padding: 0 40px;
 }
-main.wrapper #works-mainvisual .sec-thumbnail ul li {
+main #works-mainvisual .sec-thumbnail ul li {
   width: 100%;
   padding: 0 40px;
   margin-bottom: 64px;
 }
-main.wrapper #works-mainvisual .sec-thumbnail ul li h2 {
+main #works-mainvisual .sec-thumbnail ul li h2 {
   font-size: 24px;
 }
-main.wrapper #works-mainvisual .sec-thumbnail ul li img {
+main #works-mainvisual .sec-thumbnail ul li img {
   width: 100%;
   max-height: 248px;
   box-shadow: 0 0 8px 4px #ccc;
 }
-main.wrapper #contact-mainvisual {
+main #contact-mainvisual {
   /********************
   contact.html
   ********************/
   margin: 128px 0;
   min-height: 100vh;
 }
-main.wrapper #contact-mainvisual .sec-input .sec-input-content {
+main #contact-mainvisual .sec-input .sec-input-content {
   margin-top: 72px;
 }
-main.wrapper #contact-mainvisual .sec-input #sec-input-name {
+main #contact-mainvisual .sec-input #sec-input-name {
   display: flex;
   justify-content: center;
   flex-direction: column;
   align-items: center;
 }
-main.wrapper #contact-mainvisual .sec-input #sec-input-name .sec-input-text {
+main #contact-mainvisual .sec-input #sec-input-name .sec-input-text {
   display: flex;
   justify-content: left;
   margin-bottom: 16px;
   width: 50%;
 }
-main.wrapper #contact-mainvisual .sec-input #sec-input-name .sec-input-text h3 {
+main #contact-mainvisual .sec-input #sec-input-name .sec-input-text h3 {
   font-size: 32px;
   display: inline;
 }
-main.wrapper #contact-mainvisual .sec-input #sec-input-name .sec-input-text .required {
+main #contact-mainvisual .sec-input #sec-input-name .sec-input-text .required {
   color: #FD0000;
   display: inline;
 }
-main.wrapper #contact-mainvisual .sec-input #sec-input-name input {
+main #contact-mainvisual .sec-input #sec-input-name input {
   width: 50%;
   height: 40px;
   border: #AEAEAE solid 1px;
   border-radius: 8px;
   padding: 8px;
 }
-main.wrapper #contact-mainvisual .sec-input #sec-input-mail {
+main #contact-mainvisual .sec-input #sec-input-mail {
   display: flex;
   justify-content: center;
   flex-direction: column;
   align-items: center;
 }
-main.wrapper #contact-mainvisual .sec-input #sec-input-mail .sec-input-text {
+main #contact-mainvisual .sec-input #sec-input-mail .sec-input-text {
   display: flex;
   justify-content: left;
   margin-bottom: 16px;
   width: 50%;
 }
-main.wrapper #contact-mainvisual .sec-input #sec-input-mail .sec-input-text h3 {
+main #contact-mainvisual .sec-input #sec-input-mail .sec-input-text h3 {
   font-size: 32px;
   display: inline;
 }
-main.wrapper #contact-mainvisual .sec-input #sec-input-mail .sec-input-text .required {
+main #contact-mainvisual .sec-input #sec-input-mail .sec-input-text .required {
   color: #FD0000;
   display: inline;
 }
-main.wrapper #contact-mainvisual .sec-input #sec-input-mail input {
+main #contact-mainvisual .sec-input #sec-input-mail input {
   width: 50%;
   height: 40px;
   border: #AEAEAE solid 1px;
   border-radius: 8px;
   padding: 8px;
 }
-main.wrapper #contact-mainvisual .sec-input #sec-input-contact {
+main #contact-mainvisual .sec-input #sec-input-contact {
   display: flex;
   justify-content: center;
   flex-direction: column;
   align-items: center;
 }
-main.wrapper #contact-mainvisual .sec-input #sec-input-contact .sec-input-text {
+main #contact-mainvisual .sec-input #sec-input-contact .sec-input-text {
   display: flex;
   justify-content: left;
   margin-bottom: 16px;
   width: 50%;
 }
-main.wrapper #contact-mainvisual .sec-input #sec-input-contact .sec-input-text h3 {
+main #contact-mainvisual .sec-input #sec-input-contact .sec-input-text h3 {
   font-size: 32px;
   display: inline;
 }
-main.wrapper #contact-mainvisual .sec-input #sec-input-contact .sec-input-text .required {
+main #contact-mainvisual .sec-input #sec-input-contact .sec-input-text .required {
   color: #FD0000;
   display: inline;
 }
-main.wrapper #contact-mainvisual .sec-input #sec-input-contact textarea {
+main #contact-mainvisual .sec-input #sec-input-contact textarea {
   width: 50%;
   height: 425px;
   border: #AEAEAE solid 1px;
   border-radius: 16px;
   padding: 8px;
 }
-main.wrapper #contact-mainvisual .sec-button {
-  text-align: center;
+main #contact-mainvisual .sec-button {
+  margin: 0 auto;
   margin-top: 72px;
+  width: 20%;
 }
-main.wrapper #contact-mainvisual .sec-button button {
-  width: 640px;
-  height: 40px;
+main #contact-mainvisual .sec-button div {
+  padding: 16px 40px;
   border: #5B9511 solid 1px;
   border-radius: 8px;
   background-color: #5B9511;
   color: #FFF;
   font-size: 24px;
+  text-align: center;
+}
+main #contact-mainvisual .sec-button div:hover {
+  cursor: pointer;
 }
 
 /********************
