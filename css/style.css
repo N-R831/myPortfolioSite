@@ -421,6 +421,36 @@ main #page-mainvisual .wroks-images #img-SP {
   width: 100%;
   grid-column: 2/3;
 }
+main .sec-detail .detail-title h4 {
+  font-size: 24px;
+}
+main .sec-detail .detail-title h5 {
+  font-size: 16px;
+}
+main .sec-detail .detail-url h4 {
+  font-size: 24px;
+}
+main .sec-detail .detail-url h5 {
+  font-size: 16px;
+}
+main .sec-detail .detail-lang h4 {
+  font-size: 24px;
+}
+main .sec-detail .detail-lang h5 {
+  font-size: 16px;
+}
+main .sec-detail .detail-purpose h4 {
+  font-size: 24px;
+}
+main .sec-detail .detail-purpose h5 {
+  font-size: 16px;
+}
+main .sec-detail .detail-about h4 {
+  font-size: 24px;
+}
+main .sec-detail .detail-about h5 {
+  font-size: 16px;
+}
 main #works-mainvisual {
   /********************
   works.html
