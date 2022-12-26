@@ -408,47 +408,83 @@ main #page-mainvisual .title-header {
   padding-top: 112px;
 }
 main #page-mainvisual .wroks-images {
+  margin-top: 48px;
   width: 100%;
-  display: grid;
-  grid-template-columns: 70% 30%;
+  height: 368px;
+  display: flex;
+  justify-content: space-between;
   position: relative;
 }
 main #page-mainvisual .wroks-images #img-PC {
-  width: 100%;
-  grid-column: 1/2;
+  width: 60%;
+  position: absolute;
+  left: 10%;
+  z-index: 10;
 }
 main #page-mainvisual .wroks-images #img-SP {
-  width: 100%;
-  grid-column: 2/3;
+  width: 35%;
+  position: absolute;
+  top: 0%;
+  left: 60%;
+}
+main .sec-detail .detail-title {
+  margin-top: 104px;
+  margin-left: 80px;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
 }
 main .sec-detail .detail-title h4 {
   font-size: 24px;
+  border-bottom: #5B9511 solid 3px;
 }
-main .sec-detail .detail-title h5 {
-  font-size: 16px;
+main .sec-detail .detail-url {
+  margin-top: 48px;
 }
 main .sec-detail .detail-url h4 {
+  margin-left: 112px;
   font-size: 24px;
 }
 main .sec-detail .detail-url h5 {
   font-size: 16px;
+  margin-top: 24px;
+  margin-left: 152px;
+}
+main .sec-detail .detail-lang {
+  margin-top: 48px;
 }
 main .sec-detail .detail-lang h4 {
+  margin-left: 112px;
   font-size: 24px;
 }
 main .sec-detail .detail-lang h5 {
   font-size: 16px;
+  margin-top: 24px;
+  margin-left: 152px;
+}
+main .sec-detail .detail-purpose {
+  margin-top: 48px;
 }
 main .sec-detail .detail-purpose h4 {
+  margin-left: 112px;
   font-size: 24px;
 }
 main .sec-detail .detail-purpose h5 {
   font-size: 16px;
+  margin-top: 24px;
+  margin-left: 152px;
+}
+main .sec-detail .detail-about {
+  margin-top: 48px;
+  margin-bottom: 128px;
 }
 main .sec-detail .detail-about h4 {
+  margin-left: 112px;
   font-size: 24px;
 }
 main .sec-detail .detail-about h5 {
+  margin-top: 24px;
+  margin-left: 152px;
   font-size: 16px;
 }
 main #works-mainvisual {
