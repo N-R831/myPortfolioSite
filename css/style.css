@@ -34,10 +34,24 @@ a {
 }
 
 .view-more {
-  width: 15%;
+  position: absolute;
+  bottom: 64px;
+  width: 8rem;
 }
-.view-more img {
+.view-more a p {
   width: 100%;
+  padding-left: 4px;
+  padding-bottom: 4px;
+  padding-right: 8px;
+  border-left: #5B9511 solid 2px;
+  border-bottom: #5B9511 solid 2px;
+}
+.view-more a span::after {
+  content: "";
+  width: 2px;
+  height: 30px;
+  color: #5B9511;
+  transform: rotate(-45deg);
 }
 
 /********************
@@ -173,8 +187,7 @@ main #about.wrapper .about-main .about-chr {
   padding: 256px 128px;
 }
 main #about.wrapper .about-main .about-chr .view-more {
-  position: absolute;
-  bottom: 64px;
+  bottom: 108px;
 }
 main #about.wrapper .about-main .about-img {
   grid-column: 2/3;
@@ -273,7 +286,7 @@ main #works .works-view .slider.slick-initialized {
   visibility: visible;
 }
 main #works .view-more {
-  position: absolute;
+  bottom: 0px;
   left: 50%;
 }
 main #contact.wrapper {

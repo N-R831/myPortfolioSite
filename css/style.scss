@@ -35,9 +35,28 @@ a {
 }
 
 .view-more {
-    width: 15%;
-    img {
-        width: 100%;
+    position: absolute;
+    bottom: 64px;
+    width: 8rem;
+    a {
+        p {
+            width: 100%;
+            padding-left: 4px;
+            padding-bottom: 4px;
+            padding-right: 8px;
+            border-left: #5B9511 solid 2px;
+            border-bottom: #5B9511 solid 2px;
+        }
+        span {
+            &::after {
+                content: "";
+                width: 2px;
+                height: 30px;
+                color: #5B9511;
+                transform: rotate(-45deg);
+            }
+        }
+
     }
 }
 
@@ -191,8 +210,7 @@ main {
                 position: relative;
                 padding: 256px 128px;
                 .view-more {
-                    position: absolute;
-                    bottom: 64px;
+                    bottom: 108px;
                 }
             }
 
@@ -305,7 +323,7 @@ main {
             }
         }
         .view-more {
-            position: absolute;
+            bottom: 0px;
             left: 50%;
         }
     }
