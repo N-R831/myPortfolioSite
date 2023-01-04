@@ -37,23 +37,26 @@ a {
 .view-more {
     position: absolute;
     bottom: 64px;
-    width: 8rem;
+    padding-left: 4px;
+    padding-bottom: 4px;
+    padding-right: 8px;
+    border-left: #5B9511 solid 2px;
+    border-bottom: #5B9511 solid 2px;
+    width: 9rem;
     a {
         p {
-            width: 100%;
-            padding-left: 4px;
-            padding-bottom: 4px;
-            padding-right: 8px;
-            border-left: #5B9511 solid 2px;
-            border-bottom: #5B9511 solid 2px;
+            display: inline;
         }
         span {
-            &::after {
+            display: inline;
+            &::before {
+                display: inline-block;
                 content: "";
                 width: 2px;
                 height: 30px;
-                color: #5B9511;
+                border-right: #5B9511 solid 2px;
                 transform: rotate(-45deg);
+                position: absolute;
             }
         }
 
@@ -147,7 +150,6 @@ main {
                 position: absolute;
                 top: 236px;
                 display: block;
-                //border: #333 solid 1px;
                 font-size: 64px;
                 font-family: 'Noto Serif';
             }
@@ -156,7 +158,6 @@ main {
                 position: absolute;
                 top: 320px;
                 display: block;
-                //border: #333 solid 1px;
             }
         }
 
@@ -171,7 +172,6 @@ main {
                 bottom: 96px;
                 font-size: 24px;
                 display: block;
-                //border: #333 solid 1px;
             }
         }
         .main-image {
@@ -191,7 +191,6 @@ main {
         padding-top: 128px;
         .about-main {
             width: 100%;
-            // height: 524px;
             display: grid;
             grid-template-columns: 53% 47%;
             margin-top: 8px;
@@ -211,6 +210,13 @@ main {
                 padding: 256px 128px;
                 .view-more {
                     bottom: 108px;
+                    text-align: left;
+                    span {
+                        &::before {
+                            left: 130px;
+                            top: -1px;
+                        }
+                    }
                 }
             }
 
@@ -313,6 +319,7 @@ main {
                     img {
                         height: auto;
                         width: 100%;
+                        box-shadow: 0 0 8px 4px #ccc;
                         aspect-ratio: 2 / 1;
                     }
                   }
@@ -325,6 +332,13 @@ main {
         .view-more {
             bottom: 0px;
             left: 50%;
+            letter-spacing: 0.15em;
+            span {
+                &::before {
+                    left: 130px;
+                    top: -5px;
+                }
+            }
         }
     }
 

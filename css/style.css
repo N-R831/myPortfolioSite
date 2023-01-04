@@ -36,22 +36,27 @@ a {
 .view-more {
   position: absolute;
   bottom: 64px;
-  width: 8rem;
-}
-.view-more a p {
-  width: 100%;
   padding-left: 4px;
   padding-bottom: 4px;
   padding-right: 8px;
   border-left: #5B9511 solid 2px;
   border-bottom: #5B9511 solid 2px;
+  width: 9rem;
 }
-.view-more a span::after {
+.view-more a p {
+  display: inline;
+}
+.view-more a span {
+  display: inline;
+}
+.view-more a span::before {
+  display: inline-block;
   content: "";
   width: 2px;
   height: 30px;
-  color: #5B9511;
+  border-right: #5B9511 solid 2px;
   transform: rotate(-45deg);
+  position: absolute;
 }
 
 /********************
@@ -188,6 +193,11 @@ main #about.wrapper .about-main .about-chr {
 }
 main #about.wrapper .about-main .about-chr .view-more {
   bottom: 108px;
+  text-align: left;
+}
+main #about.wrapper .about-main .about-chr .view-more span::before {
+  left: 130px;
+  top: -1px;
 }
 main #about.wrapper .about-main .about-img {
   grid-column: 2/3;
@@ -280,6 +290,7 @@ main #works .works-view .slider .slider-img {
 main #works .works-view .slider .slider-img img {
   height: auto;
   width: 100%;
+  box-shadow: 0 0 8px 4px #ccc;
   aspect-ratio: 2/1;
 }
 main #works .works-view .slider.slick-initialized {
@@ -288,6 +299,11 @@ main #works .works-view .slider.slick-initialized {
 main #works .view-more {
   bottom: 0px;
   left: 50%;
+  letter-spacing: 0.15em;
+}
+main #works .view-more span::before {
+  left: 130px;
+  top: -5px;
 }
 main #contact.wrapper {
   margin-top: 128px;
